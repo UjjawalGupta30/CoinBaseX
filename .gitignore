@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/studio/node_modules
+/studio/node_modules/@angular/cli/node_modules
 /.pnp
 .pnp.js
 
