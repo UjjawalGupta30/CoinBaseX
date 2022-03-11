@@ -1,11 +1,11 @@
 {
   "root": true,
+  "api": {
+    "projectId": "twvzz1tl",
+    "dataset": "production"
+  },
   "project": {
     "name": "coinbasex"
-  },
-  "api": {
-    "projectId": "5jedc1be",
-    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",

@@ -1,9 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/studio/node_modules
-/studio/node_modules/@angular/cli/node_modules
+package-lock.json
+package.json
+yarn.lock
+node_modules
 /.pnp
 .pnp.js
 
