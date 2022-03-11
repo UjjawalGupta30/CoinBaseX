@@ -8,18 +8,16 @@ const Header = ({ walletAddress, connectWallet }) => {
       <Title>Assets</Title>
       <ButtonContainer>
         <WalletLink>
-          <WalletLink>
-            <WalletLinkTitle>Wallet Connected</WalletLinkTitle>
-            <WalletAddress>
-              {walletAddress.address.slice(0, 7)} ...{" "}
-              {walletAddress.address.slice(35)}
-            </WalletAddress>
-          </WalletLink>
+          <WalletLinkTitle>Wallet Connected</WalletLinkTitle>
+          <WalletAddress>
+            {walletAddress.address.slice(0, 7)}...{" "}
+            {walletAddress.address.slice(35)}
+          </WalletAddress>
         </WalletLink>
         <Button style={{ backgroundColor: "#3773f5", color: "#000" }}>
           Buy/Sell
         </Button>
-        <Button style={{ color: "white" }}>Send/Receive</Button>
+        <Button style={{ color: "white" }}>Send / Receive</Button>
       </ButtonContainer>
     </Wrapper>
   );
