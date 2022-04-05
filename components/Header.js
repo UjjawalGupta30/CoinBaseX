@@ -59,7 +59,7 @@ const Button = styled.div`
 
 const WalletLink = styled.div`
   font-size: 0.8rem;
-  border-radius: 50rem;
+  border-radius: 25rem;
   border: 1px solid #282b2f;
   padding: 0.1rem;
   margin-right: 1rem;
@@ -71,6 +71,7 @@ const WalletLink = styled.div`
 
 const WalletLinkTitle = styled.div`
   font-size: 1.1rem;
+  width: 100%;
   font-weight: 600;
   margin-bottom: 0.3rem;
   color: #27ad75;
@@ -78,5 +79,6 @@ const WalletLinkTitle = styled.div`
 
 const WalletAddress = styled.div`
   font-size: 0.8rem;
+  margin-left: 1.25rem;
   color: white;
 `;
