@@ -51,6 +51,7 @@ const NavItemsContainer = styled.div`
   margin-top: 3rem;
   & :hover {
     cursor: pointer;
+    background-color: #141519;
   }
 `;
 
@@ -62,10 +63,6 @@ const NavItem = styled.div`
   border-radius: 0.5rem;
   margin-bottom: 1.5rem;
   height: 4rem;
-
-  & :hover {
-    background-color: #141519;
-  }
 `;
 
 const NavIcon = styled.div`
@@ -75,6 +72,10 @@ const NavIcon = styled.div`
   border-radius: 50%;
   margin: 0 1rem;
   place-items: center;
+  & :hover {
+    // cursor: pointer;
+    color: #3773f5;
+  }
 `;
 
 const NavTitle = styled.div``;
