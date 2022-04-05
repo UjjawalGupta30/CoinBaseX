@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { coins } from "../static/coins";
 import Coin from "./Coin";
+import BalanceChart from "./BalanceChart";
 
-const Portfolio = () => {
+const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
   return (
     <Wrapper>
       <Content>
+        <Chart>
+          <div>
+            <Balance>
+              <BalanceTitle>Portofolio balance</BalanceTitle>
+              <BalanceValue>
+                {" $ "}
+                {/* {walletBalance.toLocaleString()} */}
+                305
+              </BalanceValue>
+            </Balance>
+          </div>
+          <BalanceChart />
+        </Chart>
         <PortofolioTable>
           <TableItem>
             <Title>Your Assets</Title>
@@ -58,6 +72,24 @@ const Content = styled.div`
   width: 100%;
   max-width: 1000px;
   padding: 2rem 1rem;
+`;
+
+const Chart = styled.div`
+  border: 1px solid #282b2f;
+  padding: 1rem 2rem;
+`;
+
+const Balance = styled.div``;
+
+const BalanceTitle = styled.div`
+  font-size: 0.9rem;
+  color: #8a919e;
+`;
+
+const BalanceValue = styled.div`
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
 `;
 
 const PortofolioTable = styled.div`
